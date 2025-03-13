@@ -383,7 +383,7 @@ def dijkstras(occupancy_grid, start, goal, logging=False):
             open_set_history.append(list(open_set))
             closed_set_history.append(list(closed_set))
 
-        # Pop the most promising node
+        # Pop the node closest to START
         g_current, current = queue.get() 
 
         # Assume the possibility that some queued nodes are visited nodes -- SKIP THEM
