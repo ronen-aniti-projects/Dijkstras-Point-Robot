@@ -441,6 +441,8 @@ def dijkstras(occupancy_grid, start, goal, logging=False):
 
 if __name__ == '__main__':
 
+    # GITHUB LINK: https://github.com/ronen-aniti-projects/Dijkstras-Point-Robot
+    
     # Define the workspace shape
     workspace_shape = (181, 51)
 
