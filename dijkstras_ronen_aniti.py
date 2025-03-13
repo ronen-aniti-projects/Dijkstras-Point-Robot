@@ -386,7 +386,7 @@ def dijkstras(occupancy_grid, start, goal, logging=False):
         # Pop the most promising node
         g_current, current = queue.get() 
 
-        # Assume some queued nodes are visited nodes
+        # Assume the possibility that some queued nodes are visited nodes -- SKIP THEM
         if current in closed_set:
             continue 
         
@@ -452,7 +452,7 @@ if __name__ == '__main__':
 
     # Change these as you please:
     # My implementation of Dijsktra's should handle invalid (obstacle or off-grid) entries correctly
-    start = (0, 0)
+    start = (10,5)
     goal = (120,50)
 
     # Run search and time it. Only turn `logging` to `True` if you need to generate an animation.  
